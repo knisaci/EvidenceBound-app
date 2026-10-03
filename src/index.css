@@ -1,0 +1,64 @@
+:root {
+  font-family: Arial, sans-serif;
+  color: #e8edf6;
+  background: #101725;
+  font-synthesis: none;
+}
+* { box-sizing: border-box; }
+body { margin: 0; }
+main { max-width: 960px; margin: auto; padding: 64px 24px; }
+.eyebrow { color: #77dbc4; font-size: 12px; letter-spacing: 2px; }
+h1 { font-size: clamp(36px, 7vw, 56px); margin: 16px 0; }
+h2 { margin-top: 0; }
+p { color: #b7c3d7; line-height: 1.6; }
+section {
+  margin-top: 36px;
+  padding: 28px;
+  background: #192335;
+  border: 1px solid #33435b;
+  border-radius: 16px;
+}
+a { color: #77dbc4; overflow-wrap: anywhere; }
+label { display: block; margin-top: 24px; }
+.controls { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 14px; }
+input, button { font: inherit; border-radius: 8px; padding: 12px 16px; }
+input { background: #101725; color: white; border: 1px solid #52637e; }
+button { background: #77dbc4; color: #101725; border: 0; cursor: pointer; }
+button:disabled { opacity: .5; cursor: wait; }
+pre {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  padding: 20px;
+  background: #101725;
+  border-radius: 8px;
+  line-height: 1.5;
+}
+.error { color: #ffaaaa; overflow-wrap: anywhere; }
+.footnote { font-size: 13px; }
+
+select {
+  margin-top: 12px;
+  padding: 12px;
+  background: #101725;
+  color: #e8edf6;
+  border: 1px solid #52637e;
+  border-radius: 8px;
+}
+.claim-result { margin-top: 32px; }
+.table-scroll { overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; margin: 20px 0; }
+th, td { text-align: left; padding: 14px 10px; border-bottom: 1px solid #33435b; }
+thead { color: #b7c3d7; }
+.match { color: #77dbc4; }
+.mismatch { color: #ffbd86; font-weight: bold; }
+summary { cursor: pointer; color: #77dbc4; margin-top: 24px; }
+li { margin: 10px 0; }
+
+fieldset { border: 0; margin: 0; padding: 0; min-width: 0; }
+fieldset input, textarea { width: 100%; margin-top: 10px; }
+textarea {
+  font: inherit; padding: 12px; background: #101725; color: #e8edf6;
+  border: 1px solid #52637e; border-radius: 8px; resize: vertical;
+}
+.form-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+@media (max-width: 600px) { .form-grid { grid-template-columns: 1fr; } }
