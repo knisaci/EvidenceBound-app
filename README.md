@@ -1,6 +1,9 @@
 # EvidenceBound web app
 
-Public website: https://knisaci.github.io/EvidenceBound/
+Current verified website: https://knisaci.github.io/EvidenceBound/
+
+Dedicated app hosting URL (deployment pending):
+https://knisaci.github.io/EvidenceBound-app/
 
 EvidenceBound helps report reviewers compare six declared record-set counts
 with facts extracted from public evidence through GenLayer validator consensus.
@@ -103,13 +106,23 @@ existing-transaction check button; the transaction was not resubmitted.
 
 Tested with Node 24.
 
+Run commands from this repository's root:
+
+```bash
 npm ci
 npm run dev
+```
 
 Production build:
-npm run build
 
-GitHub Pages builds from main with the /EvidenceBound/ asset base.
+```bash
+npm run build
+```
+
+The dedicated GitHub Pages workflow builds from `main` with the
+`/EvidenceBound-app/` asset base. Enable GitHub Actions as the Pages source,
+then run the deployment workflow. The original verified site remains available
+while this deployment is being configured.
 
 ## Repository relationship
 
