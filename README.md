@@ -1,9 +1,8 @@
 # EvidenceBound web app
 
-Current verified website: https://knisaci.github.io/EvidenceBound/
+Public website: https://knisaci.github.io/EvidenceBound-app/
 
-Dedicated app hosting URL (deployment pending):
-https://knisaci.github.io/EvidenceBound-app/
+Earlier verified hosting location: https://knisaci.github.io/EvidenceBound/
 
 EvidenceBound helps report reviewers compare six declared record-set counts
 with facts extracted from public evidence through GenLayer validator consensus.
@@ -69,7 +68,9 @@ its return-data discovery was verified.
 
 ## Finalized public-site workflow — claim-4
 
-Both submission and resolution were performed through the hosted website.
+Both submission and resolution were performed through the earlier hosted
+website at https://knisaci.github.io/EvidenceBound/. The dedicated app deployment
+uses the same frontend source and existing Bradbury contract.
 
 Submission:
 https://explorer-bradbury.genlayer.com/tx/0x0ea23f4e4112a452ba7ffd8855a86d0b5849452d3f44b11f600518c18f8f5025
@@ -121,8 +122,8 @@ npm run build
 
 The dedicated GitHub Pages workflow builds from `main` with the
 `/EvidenceBound-app/` asset base. Enable GitHub Actions as the Pages source,
-then run the deployment workflow. The original verified site remains available
-while this deployment is being configured.
+then run the deployment workflow. The dedicated deployment completed successfully
+on 3 October 2026. The original hosting location remains available.
 
 ## Repository relationship
 
