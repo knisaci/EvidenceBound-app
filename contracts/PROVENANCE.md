@@ -2,16 +2,19 @@
 
 ## Included source
 
-[`evidence_bound.py`](./evidence_bound.py) is an unchanged review copy of EvidenceBound v0.3 from the original contract repository.
+[`evidence_bound.py`](./evidence_bound.py) is a deployment-exact review copy of EvidenceBound v0.3 from the original contract repository.
 
 - Original repository: https://github.com/knisaci/EvidenceBound
 - Implementation revision: `f0a0db04e4f3dbdf686968d0e198d17afc0c8ed7`
 - Original pinned source: https://github.com/knisaci/EvidenceBound/blob/f0a0db04e4f3dbdf686968d0e198d17afc0c8ed7/contracts/evidence_bound.py
 - Accepted Intelligent Contract submission snapshot: `fdaf62e2c0935cdd44ceaf84e833c38cdddf62e7`
 - Accepted pinned source: https://github.com/knisaci/EvidenceBound/blob/fdaf62e2c0935cdd44ceaf84e833c38cdddf62e7/contracts/evidence_bound.py
-- Git source blob SHA: `4ac2f95e1d342074c053b7de36fa1fa1aaa7bb2f` at both revisions and in this copy.
+- Original Git source blob SHA: `4ac2f95e1d342074c053b7de36fa1fa1aaa7bb2f` at both original revisions.
+- Deployment-exact copy Git blob SHA: `54ba30557b70d57d72cffb4c544db7d6d12071a1`.
+- Deployment-exact source SHA-256: `1d0c54e5aa8bdcdcde2fc66acaea8f3bfbd80612e48423b1a0b43f5465cf6e4a`.
+- Original source SHA-256: `5e426f52ce90a2f89950cfad6d1a7cd69911183bdc193b5d8c93e0ad5a9817de`.
 
-The implementation revision introduced the v0.3 contract; the accepted snapshot contains the same source bytes. Original authorship and development history remain in the original repository. This copy does not introduce a new deployment or change contract behaviour.
+The implementation revision introduced the v0.3 contract; the accepted snapshot contains the same original source bytes. On 5 October 2026, the maintainer retrieved the Bradbury source with the SDK: it contained 11,337 UTF-8 bytes, while the original file contained 11,338. The only difference was the original file's final newline (line 309). This review copy omits that newline to match the deployed bytes exactly. No code or behaviour was changed. Original authorship and development history remain in the original repository. This copy does not introduce a new deployment or change contract behaviour.
 
 ## Bradbury deployment record
 
