@@ -51,6 +51,23 @@ retrieve evidence and extract a canonical fact object. Consensus covers those
 facts, and deterministic contract code compares all six claimed counts.
 The website does not generate or substitute its own adjudication.
 
+## Included Intelligent Contract source
+
+The complete unchanged v0.3 contract is included at
+[contracts/evidence_bound.py](contracts/evidence_bound.py).
+[Contract provenance and deployment verification](contracts/PROVENANCE.md)
+identifies the original implementation revision, accepted source snapshot,
+source blob SHA and Bradbury deployment transactions.
+
+Verify the included source against code retrieved from Bradbury:
+
+```bash
+npm ci
+node scripts/verify-contract-source.mjs
+```
+
+This read-only check needs no wallet and succeeds only on an exact byte match.
+
 ## Deployment and verification
 
 Network: GenLayer Bradbury testnet
@@ -127,8 +144,10 @@ on 3 October 2026. The original hosting location remains available.
 
 ## Repository relationship
 
-This repository maintains the EvidenceBound web application separately from
-its previously accepted Intelligent Contract.
+This repository contains the EvidenceBound web application and an unchanged
+review copy of its previously accepted Intelligent Contract. Contract development
+history remains in the original repository; pinned provenance is documented in
+[contracts/PROVENANCE.md](contracts/PROVENANCE.md).
 
 Contract source and development history:
 https://github.com/knisaci/EvidenceBound
