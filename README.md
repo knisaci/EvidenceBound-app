@@ -53,11 +53,13 @@ The website does not generate or substitute its own adjudication.
 
 ## Included Intelligent Contract source
 
-The complete unchanged v0.3 contract is included at
+The complete deployment-exact v0.3 contract is included at
 [contracts/evidence_bound.py](contracts/evidence_bound.py).
 [Contract provenance and deployment verification](contracts/PROVENANCE.md)
 identifies the original implementation revision, accepted source snapshot,
-source blob SHA and Bradbury deployment transactions.
+original and deployed source hashes and Bradbury deployment transactions.
+The deployed source omits the original file's final newline; the included copy
+preserves the deployed bytes. No executable code differs.
 
 Verify the included source against code retrieved from Bradbury:
 
@@ -144,7 +146,7 @@ on 3 October 2026. The original hosting location remains available.
 
 ## Repository relationship
 
-This repository contains the EvidenceBound web application and an unchanged
+This repository contains the EvidenceBound web application and a deployment-exact
 review copy of its previously accepted Intelligent Contract. Contract development
 history remains in the original repository; pinned provenance is documented in
 [contracts/PROVENANCE.md](contracts/PROVENANCE.md).
